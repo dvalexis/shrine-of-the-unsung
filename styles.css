@@ -61,3 +61,12 @@ img {
     height: 250px;
 }
 
+.design-credit {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;  
+    font-size: 0.6em;
+}
