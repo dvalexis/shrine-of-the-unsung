@@ -11,6 +11,11 @@ header {
     color: white;
 }
 
+a:visited { 
+    text-decoration: none; 
+    color: blue; 
+   }
+
 #navbar {
     position: fixed;
     min-width: 290px;
@@ -25,12 +30,17 @@ header {
     border-top: 1px groove;
     list-style: none;
     position: relative;
-    width: 100%;
+    
+    padding: 15px;
   }
 
 #main-doc {
     position: absolute;
     margin-left: 350px;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 section header {
@@ -49,10 +59,16 @@ section header:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .unsung-info {
     padding-left: 20px;
+}
+
+article {
+    width: 300px;
+    max-width: 500px;
 }
 
 img {
