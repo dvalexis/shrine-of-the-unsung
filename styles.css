@@ -11,9 +11,24 @@ header {
     color: white;
 }
 
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+    opacity: 0.5;
+    object-fit: cover;
+}
+
+a {
+    color: black;
+}
+
 a:visited { 
     text-decoration: none; 
-    color: blue; 
+    color: black; 
    }
 
 #navbar {
@@ -71,10 +86,11 @@ article {
     max-width: 500px;
 }
 
-img {
+img:not(.background) {
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    object-fit: cover;
 }
 
 .design-credit {
