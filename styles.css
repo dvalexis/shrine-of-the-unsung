@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 290px;
     background-color: white;
@@ -11,10 +15,6 @@ header {
     color: white;
 }
 
-.wrapper {
-    position: relative;
-    width: 100%;
-}
 
 .background {
     position: fixed;
@@ -93,10 +93,6 @@ img:not(.background, .sidebar-image) {
     object-fit: cover;
 }
 
-.sidebar-image {
-    width: 20%;
-}
-
 .design-credit {
     position: fixed;
     bottom: 0;
@@ -106,3 +102,39 @@ img:not(.background, .sidebar-image) {
     font-family: 'Playfair Display', serif;  
     font-size: 0.6em;
 }
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      height: 207px;
+    }
+  
+    #navbar {
+
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 450px;
+    }
+
+    .unsung-container {
+        flex-wrap: wrap;
+        }
+    }
+
+ @media only screen and (max-width: 600px) {
+    .unsung-info, header {
+        text-align: center;
+    }
+  }
